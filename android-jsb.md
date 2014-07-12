@@ -275,11 +275,11 @@ PS. IOS下javascript调用Objective-C有没有方便的方法？还是得普通j
 ------
 
 【集成友盟社会化SDK】COCOS2D-JS3.0ALPHA2中JAVA/C++/JAVASCRPIT 三方交互的实现
-http://www.asmld.com/?p=113
+* http://www.asmld.com/?p=113
 
 3.jni_c++调用java中的方法
-http://banshaotang.iteye.com/blog/2078501
+* http://banshaotang.iteye.com/blog/2078501
 
 cocos2d-x 使用JniHelper 调用 java代码 获取安卓生成的唯一标示UUID
-http://blog.csdn.net/yxiaom/article/details/17137479
+* http://blog.csdn.net/yxiaom/article/details/17137479
 
