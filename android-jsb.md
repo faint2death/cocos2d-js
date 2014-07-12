@@ -10,7 +10,7 @@
 
 首先在项目目录下的frameworks/runtime-src/Classes/目录添加jsb_os_info.hpp，内容如下：
 
-```
+```c
 #include "cocos2d_specifics.hpp"  
 #include "cocos2d.h"
 
@@ -58,7 +58,7 @@ void register_jsb_os_info(JSContext* cx, JSObject* obj) {
 
 然后修改同目录下AppDelegate.cpp文件，添加相应的引用和注册javascript函数：
 
-```
+```c
 ...
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 #include "jsb_os_info.hpp"
@@ -81,7 +81,7 @@ void register_jsb_os_info(JSContext* cx, JSObject* obj) {
 
 修改项目目录frameworks/runtime-src/proj.android/src/org/cocos2dx/javascript/AppActivity.java，这个程序本来是空的，增加代码如下：
 
-```
+```java
 package org.cocos2dx.javascript;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
