@@ -4,7 +4,7 @@
 
 ### 1. 环境配置
 
-cocos2d-js 3.0 rc0的changelog提到cocos在使用release模式编译的时候，自动把js脚本编译成jsc，但是看`cocos2d-js-v3.0-rc0/tools/cocos2d-console/plugins/plugin_jscompile/bin/`下的jsbcc只支持mac和win32平台，所以把原来linux下编译环境换到mac平台。
+cocos2d-js 3.0 rc0的changelog提到cocos在使用release模式编译的时候，自动把js脚本编译成jsc，但是看`cocos2d-js-v3.0-rc0/tools/cocos2d-console/plugins/plugin_jscompile/bin/`下的jsbcc只支持mac和win32平台，所以把原来linux下编译环境换到mac平台。([cocoachina论坛的akira_cn提供了Linux版本jsbcc的方法](http://www.cocoachina.com/bbs/read.php?tid=213745))
 
 MacBook Air的机器，操作系统版本是OS X 10.9.3，Xcode版本是5.1.1，java开发环境已经装好。下载如下必要的开发包：
 
