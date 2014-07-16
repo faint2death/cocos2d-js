@@ -1,4 +1,4 @@
-# cocos2d-js 3.0 jsb环境调用底层java代码
+# cocos2d-js 3.0 android环境调用底层java代码
 
 ------
 

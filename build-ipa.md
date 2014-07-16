@@ -159,4 +159,4 @@ total 18328
 <a href="itms-services://?action=download-manifest&url=https://xxx.xxx.xxx/magic/MyGame.plist">点击安装(ios)</a>
 ```
 
-IOS 7.1以上版本必须要https才可以正常安装。可以到Godaddy买一个https证书。
+IOS 7.1以上版本必须要https才可以正常安装，可以到Godaddy买一个https证书。上述的xxx麻烦自行修改一下。
