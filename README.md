@@ -5,4 +5,5 @@
 - [cocos2d-js 3.0热更新](assetsmanager.md)
 - [cocos2d-js 3.0调试](debug.md)
 - [cocos2d-js 3.0使用pomelo若干问题](pomelo-tips.md)
+- [cocos2d-js 3.0编译WEB版若干问题](closure-compiler.md)
 
