@@ -47,14 +47,40 @@ cocos compile -p web -m release --source-map
 
 ![debug](chrome-debug.jpg)
 
-## 2. 经验教训
+## 2. 阻止closure compiler混淆特定变量名
+
+就是在该行代码上面加一行：
+
+```javascript
+/** @expose */
+```
+
+比如cocos2d-js 3.0 rc2发布后，发现编译混淆后，又出现如下错误：
+
+```
+Error: res/click.mp3 greater than 5
+```
+
+panda连夜看了代码后，给了一个解决方案，在CCAudio.js中，修改下面的代码：
+
+```javascript
+            /** @expose */
+            sourceNode.onended = function(){
+                self._stopped = true;
+            };
+```
+
+这个bug是因为onended变量名被混淆后事件注册失败。
+
+## 3. 经验教训
 
 ------
 
 * var k = {name : 'value'}; 这里的name如果加了引号，一准被closure compiler压坏
 * 对象成员取值不要用k['name']，这样也容易被closure compiler压坏，要用k.name
+* 不想closure compiler混淆的变量名，在其上面加`/** @expose */`
 
-## 3. 参考文档
+## 4. 参考文档
 
 ------
 
